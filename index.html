@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <title>Style Website</title>
+</head>
+<body>
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1>Hirohiko Araki</h1>
+          <p>Manga Artist and Writer</p>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="card mainCard" style="width: 500px;">
+                <img class="card-img-top" src="/Img/Hirohiko_Araki.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Hirohiko Araki</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://en.wikipedia.org/wiki/Hirohiko_Araki" class="btn">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="color-mid-8">
+          <div class="card twins topCard" style="width: 350px;">
+            <img class="card-img-top" src="/Img/poses.webp" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Poses</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="https://www.thecollector.com/what-inspired-hirohiko-araki-manga-artist/" class="btn ">Go somewhere</a>
+            </div>
+            <div class="col-md-3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="color-mid-8">
+          <div class="card twins " style="width: 350px;">
+            <img class="card-img-top" src="/Img/art.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Art Style</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="https://www.thecollector.com/what-inspired-hirohiko-araki-manga-artist/" class="btn ">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row">
+          <button class="accordion"  id="Jojo1" onClick="showJojo1()" >Section 1</button>
+<div class="panel" id="Jojo1Content">
+  <p>Lorem ipsum...</p>
+</div>
+
+<button class="accordion"  id="Jojo2" onClick="showJojo2()" >Section 2</button>
+<div class="panel" id="Jojo2Content">
+  <p>Lorem ipsum...</p>
+</div>
+
+<button class="accordion" id="jojo3" onClick="showJojo3()">Section 3</button>
+<div class="panel" id="Jojo3Content">
+  <p>Lorem ipsum...</p>
+</div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/script.js">
+	
+    </script>
+</body>
+</html>
