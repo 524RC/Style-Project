@@ -1,27 +1,30 @@
-document.getElementById('Jojo1Content').style.display = 'none';
-document.getElementById('Jojo2Content').style.display = 'none';
-document.getElementById('Jojo3Content').className = 'accordionPanelTab highlight';
-
-function hidePanels(){
-    document.getElementById('Jojo1Content').style.display = 'none';
-    document.getElementById('Jojo2Content').style.display = 'none';
-    document.getElementById('Jojo3Content').style.display = 'none';
-    document.getElementById('Jojo1').className = 'accordionPanelTab';
-    document.getElementById('Jojo2').className = 'accordionPanelTab';
-    document.getElementById('Jojo3').className = 'accordionPanelTab';
+/*close the other two panels*/
+document.getElementById('comingUpContent').style.display = 'none';
+document.getElementById('pastEventsContent').style.display = 'none';
+/*highlight for what panel you are on*/
+document.getElementById('eventsWeekTab').className = 'accordionPanelTab highlight';
+/*hide the panels*/
+function hidePanels() {
+  document.getElementById('comingUpContent').style.display = 'none';
+  document.getElementById('pastEventsContent').style.display = 'none';
+  document.getElementById('eventsWeekContent').style.display = 'none';
+  document.getElementById('comingUpTab').className = 'accordionPanelTab';
+  document.getElementById('pastEventsTab').className = 'accordionPanelTab';
+  document.getElementById('eventsWeekTab').className = 'accordionPanelTab';
 }
+/*open one panel and close the other panels*/
 function showComingUp() {
-    hidePanels();
-    document.getElementById('Jojo1Content').style.display = 'block';
-    document.getElementById('Jojo1').className = 'accordionPanelTab highlight';
+  hidePanels();
+  document.getElementById('comingUpContent').style.display = 'block';
+  document.getElementById('comingUpTab').className = 'accordionPanelTab highlight';
 }
 function showPastEvents() {
-    hidePanels();
-    document.getElementById('Jojo2Content').style.display = 'block';
-    document.getElementById('Jojo2').className = 'accordionPanelTab highlight';
+  hidePanels();
+  document.getElementById('pastEventsContent').style.display = 'block';
+  document.getElementById('pastEventsTab').className = 'accordionPanelTab highlight';
 }
 function showWeekContent() {
-    hidePanels();
-    document.getElementById('Jojo3Content').style.display = 'block';
-    document.getElementById('Jojo3').className = 'accordionPanelTab highlight';
+  hidePanels();
+  document.getElementById('eventsWeekContent').style.display = 'block';
+  document.getElementById('eventsWeekTab').className = 'accordionPanelTab highlight';
 }
